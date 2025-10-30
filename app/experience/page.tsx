@@ -9,15 +9,15 @@ export default function ExperiencePage() {
 
       <div className="mt-4 space-y-4 text-neutral-600 max-w-2xl">
         <p>
-          For over ten years, I've built and scaled digital products across industries—from 
+          For over ten years, I’ve built and scaled digital products across industries: from 
           AI/ML platforms to data infrastructure to enterprise systems. I specialize in aligning fragmented stakeholders, unsticking products that have 
           stalled, and bridging strategy with execution.
         </p>
 
         <p>
           My work spans product management & strategy, platform architecture, and organizational design. 
-          I've led initiatives for global enterprises and fast-moving startups, though I can't 
-          disclose all clients publicly. I've helped shape platforms serving 
+          I’ve led initiatives for global enterprises and fast-moving startups, though I can’t 
+          disclose all clients publicly. I’ve helped shape platforms serving 
           thousands of users, driven AI adoption at scale, and published research on product 
           leadership and organizational psychology.
         </p>
