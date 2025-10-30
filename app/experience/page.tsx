@@ -5,32 +5,22 @@ export const metadata = { title: "Experience & CV — Robert Bornemann" };
 export default function ExperiencePage() {
   return (
     <main className="mx-auto max-w-6xl px-5 md:px-6 py-12">
-      <h1 className="text-3xl md:text-4xl font-semibold">Experience & CV</h1>
+      <h1 className="text-3xl md:text-4xl font-semibold">About Me</h1>
 
       <div className="mt-4 space-y-4 text-neutral-600 max-w-2xl">
         <p>
-          For over ten years, I’ve built and scaled digital products across industries: from 
-          AI/ML platforms to data infrastructure to enterprise systems. I specialize in aligning fragmented stakeholders, unsticking products that have 
-          stalled, and bridging strategy with execution.
-        </p>
+For over ten years I have built and scaled digital products across industries, from AI and machine learning platforms to data infrastructure and enterprise systems. I specialize in aligning fragmented stakeholders, unsticking stalled products, and connecting strategy with execution.        </p>
 
         <p>
-          My work spans product management & strategy, platform architecture, and organizational design. 
-          I’ve led initiatives for global enterprises and fast-moving startups, though I can’t 
-          disclose all clients publicly. I’ve helped shape platforms serving 
-          thousands of users, driven AI adoption at scale, and published research on product 
-          leadership and organizational psychology.
-        </p>
+My work spans product management and strategy, platform architecture, and organizational design. I have led initiatives for global enterprises and fast-moving startups, though I cannot disclose all clients publicly. My consulting work has taken me across continents, including four years in Brazil and one year in Silicon Valley, shaping how I approach leadership, culture, and innovation.        </p>
         <p>
-          I thrive in ambitious, complex environments where clear thinking matters more than 
-          perfect plans.
-        </p>
+I have helped design platforms serving thousands of users, driven AI adoption at scale, and published on product leadership and organizational psychology. I thrive in ambitious and complex environments where clear thinking matters more than perfect plans.        </p>
       </div>
 
       {/* Anonymised clients / roles */}
       <section className="mt-10 space-y-6">
         <ExpItem
-          title="Global chemicals manufacturer — ML Platform Product Strategy"
+          title="Global chemicals manufacturer — ML Platform Product"
           period="Germany · 500+ researchers"
           bullets={[
             "Evolution of an internal AI/ML platform aimed at democratizing research and development efforts.",
@@ -39,8 +29,8 @@ export default function ExperiencePage() {
           ]}
         />
         <ExpItem
-          title="Automotive OEM — AI-powered data discovery prototype"
-          period="Germany · cross-system search"
+          title="Luxury car manufacturer — AI-powered data discovery prototype"
+          period="Germany · Cross-system search"
           bullets={[
             "Design of an llm interface to query hundreds of internal data sources & systems.",
             "Aimned to enable company-wide data discovery to support simulation-based car design.",

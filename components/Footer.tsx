@@ -7,7 +7,7 @@ export default function Footer() {
         </div>
         <div className="text-sm">
           <a className="rounded-full border px-4 py-2 hover:bg-neutral-50" href="mailto:you@domain.com">
-            you@domain.com
+            RobertBornemann.de
           </a>
         </div>
       </div>

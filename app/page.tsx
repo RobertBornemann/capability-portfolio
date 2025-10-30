@@ -27,9 +27,8 @@ export default function Home() {
                   Links →
                 </a>
                 <div className="hidden md:flex items-center gap-5 text-sm text-neutral-600">
-                  <a href="https://github.com/yourname" target="_blank" className="hover:underline">GitHub</a>
-                  <a href="https://www.linkedin.com/in/yourprofile" target="_blank" className="hover:underline">LinkedIn</a>
-                  <a href="/Robert_Bornemann_CV.pdf" className="hover:underline">CV (PDF)</a>
+                  <a href="https://github.com/RobertBornemann" target="_blank" className="hover:underline">GitHub</a>
+                  <a href="https://www.linkedin.com/in/robert-bornemann-781713253/" target="_blank" className="hover:underline">LinkedIn</a>
                 </div>
               </div>
             </div>
