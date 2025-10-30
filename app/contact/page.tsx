@@ -9,14 +9,14 @@ export default function ContactPage() {
       </p>
 
       <div className="mt-6 grid gap-5 md:grid-cols-2">
-        <a href="mailto:you@domain.com" className="rounded-2xl border border-neutral-200 bg-white p-5 hover:bg-neutral-50">
+        <a href="mailto:bornemann.robert@yahoo.de" className="rounded-2xl border border-neutral-200 bg-white p-5 hover:bg-neutral-50">
           <div className="text-sm uppercase tracking-wide text-neutral-600">Email</div>
           <div className="text-lg font-semibold">bornemann.robert@yahoo.de</div>
         </a>
 
-        <a href="https://www.linkedin.com/in/yourprofile" target="_blank" className="rounded-2xl border border-neutral-200 bg-white p-5 hover:bg-neutral-50">
+        <a href="https://www.linkedin.com/in/robert-bornemann-781713253/" target="_blank" className="rounded-2xl border border-neutral-200 bg-white p-5 hover:bg-neutral-50">
           <div className="text-sm uppercase tracking-wide text-neutral-600">LinkedIn</div>
-          <div className="text-lg font-semibold">https://www.linkedin.com/in/robert-bornemann-781713253/</div>
+          <div className="text-lg font-semibold">Linkedin.com/in/robert-bornemann-781713253/</div>
         </a>
       </div>
 
