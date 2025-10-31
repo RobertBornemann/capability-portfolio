@@ -1,7 +1,33 @@
 'use client';
 import Image from 'next/image';
+import Link from "next/link";
 
 export default function Home() {
+
+  const cards = [
+    {
+      title: "Continuous Discovery AI",
+      blurb:
+        "AI-powered interview analysis for product discovery. Locked inputs, validated outputs, and cost controls.",
+      href: "/ai-capability-studio/discovery", // live page
+      code: "https://github.com/RobertBornemann/continuous_discovery_ai",
+    },
+    {
+      title: "PromptOps",
+      blurb:
+        "Service + SDK to manage prompts as versioned artifacts. Coming soon.",
+      href: null,
+      code: null,
+    },
+    {
+      title: "AI Cost & Quality Guard",
+      blurb:
+        "Guardrails for latency, cost, and output quality. Coming soon.",
+      href: null,
+      code: null,
+    },
+  ];
+
   return (
     <main className="min-h-screen bg-[#fafafa] text-neutral-900">
 
@@ -70,20 +96,46 @@ export default function Home() {
         <p className="mt-2 text-neutral-600">Interactive demos and case studies coming up.</p>
 
         {/* placeholder cards */}
-        <div className="mt-8 grid gap-5 md:grid-cols-3">
-          {['Continuous Discovery AI', 'PromptOps', 'AI Cost & Quality Guard'].map((t) => (
-            <div key={t} className="rounded-2xl border border-neutral-200 bg-white p-5">
-              <div className="text-xs uppercase tracking-wide text-neutral-600">Demo</div>
-              <div className="mt-1 text-lg font-semibold">{t}</div>
-              <p className="mt-1 text-sm text-neutral-600">Short description. Link to live demo & code.</p>
-              <div className="mt-3 flex gap-2 text-sm">
-                <a className="rounded-xl border px-3 py-2" href="#" onClick={(e)=>e.preventDefault()}>Open</a>
-                <a className="rounded-xl border px-3 py-2" href="#" onClick={(e)=>e.preventDefault()}>Code</a>
-              </div>
-            </div>
-          ))}
+
+        <div className="mt-8 grid gap-5 md:grid-cols-3 items-stretch">
+  {cards.map((c) => (
+    <div key={c.title} className="rounded-2xl border border-neutral-200 bg-white p-5">
+      <div className="flex h-full flex-col">
+        <div className="text-xs uppercase tracking-wide text-neutral-600">Demo</div>
+        <div className="mt-1 text-lg font-semibold">{c.title}</div>
+        <p className="mt-1 text-sm text-neutral-600">{c.blurb}</p>
+
+        {/* CTA row pinned to the bottom */}
+        <div className="mt-auto pt-3 flex gap-2 text-sm">
+          {c.href ? (
+            <Link href={c.href} className="rounded-xl border px-3 py-2 hover:bg-neutral-50">
+              Open
+            </Link>
+          ) : (
+            <span className="rounded-xl border px-3 py-2 text-neutral-400 select-none cursor-default">
+              Not available
+            </span>
+          )}
+          {c.code ? (
+            <a
+              href={c.code}
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-xl border px-3 py-2 hover:bg-neutral-50"
+            >
+              Code
+            </a>
+          ) : null}
         </div>
+      </div>
+    </div>
+  ))}
+</div>
+
+        
       </section>
     </main>
   );
 }
+
+
