@@ -9,7 +9,7 @@ export default function Nav() {
           <ul className="flex items-center gap-5 md:gap-7">
             <li><Link className="hover:underline" href="/">Home</Link></li>
             <li><Link className="hover:underline" href="/experience">About Me</Link></li>
-            <li><Link className="hover:underline" href="/#studio">AI Capability Studio</Link></li>
+            <li><Link className="hover:underline" href="/ai-capability-studio">AI Capability Studio</Link></li>
             <li><Link className="hover:underline" href="/#research">Research</Link></li>
             <li><Link className="hover:underline" href="/contact">Contact</Link></li>
           </ul>
