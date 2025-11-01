@@ -15,7 +15,7 @@ export default function Home() {
     {
       title: "AI Cost & Performance Optimizer",
       blurb:
-        "Guardrails for latency, cost, and output quality. Coming soon.",
+        "Guardrails for latency, cost, and output quality. In Progress!",
       href: null,
       code: null,
     },
