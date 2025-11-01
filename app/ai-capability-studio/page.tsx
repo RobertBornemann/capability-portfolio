@@ -21,10 +21,10 @@ export default function StudioHub() {
     },
     {
       slug: "promptops",
-      title: "PromptOps Kit",
+      title: "AI Cost & Performance Optimizer",
       blurb:
-        "Small service + SDK to manage prompts as versioned artifacts with: experiment tracking, cost/latency dashboards, guardrails (PII/red-team tests), and approval workflows.",
-      status: "Coming soon",
+        "A visual, interactive tool that shows AI cost optimization opportunities in real-time, with before/after comparisons and actionable recommendations.",
+      status: "In Progress",
       actionable: false, // hide button
     },
   ];

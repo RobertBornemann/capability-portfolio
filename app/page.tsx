@@ -13,16 +13,16 @@ export default function Home() {
       code: "https://github.com/RobertBornemann/continuous_discovery_ai",
     },
     {
-      title: "PromptOps",
+      title: "AI Cost & Performance Optimizer",
       blurb:
-        "Service + SDK to manage prompts as versioned artifacts. Coming soon.",
+        "Guardrails for latency, cost, and output quality. Coming soon.",
       href: null,
       code: null,
     },
     {
-      title: "AI Cost & Quality Guard",
+      title: "PromptOps",
       blurb:
-        "Guardrails for latency, cost, and output quality. Coming soon.",
+        "Service + SDK to manage prompts as versioned artifacts. Coming soon.",
       href: null,
       code: null,
     },
@@ -132,7 +132,7 @@ export default function Home() {
   ))}
 </div>
 
-        
+
       </section>
     </main>
   );
