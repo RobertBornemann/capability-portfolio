@@ -38,7 +38,7 @@ export default function Home() {
             {/* Left column: headline + copy + CTA */}
             <div>
               <h1 className="text-4xl md:text-6xl leading-[1.05] font-extrabold tracking-tight">
-                Lead Product Manager
+                Product Leader
                 <br className="hidden md:block" />
                 <span className="text-neutral-800"> & Consultant.</span>
               </h1>
