@@ -16,8 +16,8 @@ export default function Home() {
       title: "AI Cost & Performance Optimizer",
       blurb:
         "Guardrails for latency, cost, and output quality. In Progress!",
-      href: null,
-      code: null,
+      href: "/ai-capability-studio/cost-optimizer",
+      code: "https://github.com/RobertBornemann/AI-Cost-Performance-Optimiser",
     },
     {
       title: "PromptOps",

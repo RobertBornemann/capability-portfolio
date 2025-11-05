@@ -1,0 +1,109 @@
+---
+title: "The Hidden Edge"
+date: "2025-11-05"
+excerpt: "How Continuous Discovery Transforms Internal Systems"
+cover: "/hidden.png"
+tags: ["Discovery", "Backend", "Product Thinking", "Craft"]
+---
+<h2 className="text-3xl md:text-1xl font-extrabold leading-tight">
+Introduction.
+</h2>
+<br />
+In today’s tech world, competition is fierce and budgets are tight. The margin for waste has almost disappeared. Success now depends on a precise understanding of the people a product serves, both on the surface and behind the curtain. On the customer facing side this discipline is already standard. Teams invest in discovery, research, and design because they cannot afford to build the wrong thing.
+<br />
+The real edge, however, still sits out of sight. Most cost and complexity live behind the interface, in the APIs, platforms, and data systems that quietly keep everything running. Yet these internal systems are rarely treated as true products with intent, ownership, and users to serve. Too often they are reduced to technical chores instead of powering the larger choreography of the business.
+<br />
+<h2 className="text-3xl md:text-1xl font-extrabold leading-tight">
+Let’s look behind the curtain for a moment. 
+</h2>
+<br />
+Internal systems fail for many reasons, but one pattern shows up again and again. Teams rush to build before they truly understand the problem. The result is great engineering aimed at an imprecise target. Sometimes the technology becomes the barrier. Some teams are so excited about the new thing that they push to use it whether or not it makes commercial sense, or they feel out of their depth and avoid the basic questions that would bring clarity.
+<br />
+This is especially true in large scale internal systems. Behind the curtain lies the backbone of modern companies, and also where most of the costs sit. A quick glance behind the curtain often reveals systems that are functional but highly inefficient, sometimes fragile, and almost always more expensive to run than they should be. In a world of shrinking budgets and rising expectations, organisations can no longer postpone addressing these problems.
+<br />
+What internal systems need most is sustained guidance toward the baseline answers that unlock progress. Who are the users. What outcomes matter right now. Where is the friction. What does good look like in their context. Until these answers are clear, roadmaps, stories, epics, and more features only create the illusion of progress. That is feature completion, not product strategy, and it is how inefficient structures take shape.
+<br />
+The question of how to build is important, but it is almost always secondary. A common response to uncertainty is to add more people, more resources, or invent new roles. Expertise is valuable, but it does not replace a clear and continuous understanding of the user problem and the outcomes that matter at a given moment. The discovery work still needs to be done.
+<br />
+<h2 className="text-3xl md:text-1xl font-extrabold leading-tight">
+Continuous discovery for internal systems: a paradigm shift? 
+</h2>
+<br />
+Why call it a paradigm shift? Because it changes how we compose the work. This is not sprinkling a bit of research onto an existing process. It means the team is always learning about users and context while it is building. It is a habit the whole team owns, not a phase and not a one time workshop. The aim is simple. Reduce uncertainty before code is committed, and keep reducing it while code is shipped. Let learning guide building, and let building create new learning.
+<br />
+As Teresa Torres puts it, continuous discovery is about making learning a weekly habit. In practice that means short conversations with real users, quick prototypes to test ideas early, and assumptions and risks made visible. After each release, adoption and outcomes are checked, and the learning feeds into the next decision. The product manager or owner orchestrates, but everyone plays a part by dedicating a small slice of time to sustain the loop.
+<br />
+**What it is not:**
+<br />
+<li>It is not a research sprint once a quarter or OKR.</li>
+<li>It is not a single workshop that creates a giant backlog.</li>
+<li>It is not renaming backlog grooming to discovery.</li>
+<li>It is not asking stakeholders what they want and calling it user insight.</li>
+<li>It is not a dashboard of metrics that no one uses to decide what to build.</li>
+<li>It is not adding a UX ticket at the end of a feature.</li>
+<br />
+And it is not running discovery for every minor change in the system. Continuous discovery is about deliberate focus: investing the effort where uncertainty is highest and the potential impact is greatest. And in internal systems, there is plenty.
+<br />
+<h2 className="text-3xl md:text-1xl font-extrabold leading-tight">
+Why does it matter and what needs to change? 
+</h2>
+<br />
+Continuous discovery stops assumptions from flowing unchecked into the backlog. It forces clarity on outcomes. It shifts learning from late and expensive to early and affordable, saving both money and frustration. It builds shared understanding across product and engineering so the team ships fewer things, but ships the right things. It also creates a common language between all actors, making collaboration faster and more effective. For a time this approach was known as dual track agile, but as Marty Cagan notes, the label often pulled teams toward process rather than principles. Today it is better described as continuous discovery and continuous delivery: a mindset of learning and building in parallel. This is one of the most critical missing habits for teams working on internal products.
+<br />
+Adopting this approach requires a deliberate push and sustained effort. Discovery and delivery must run side by side. Successful teams advance on two fronts at once. On one side they explore problems, test assumptions, and shape ideas through small experiments and conversations with users. On the other they build, release, and refine solutions that have already proven their potential value. Each flow feeds the other. What we learn today guides what we build tomorrow, and what we build tomorrow creates new opportunities to learn again.
+<br />
+That shift lets teams treat internal systems as real products, including approaching developers and partner teams as a new customer segment. Assumptions are not enough. Their environments and priorities may differ from yours. The task is to study their context, design and test solutions that meet their needs with minimal effort and waste, and only then commit to development. The aim is to identify the most adequate solution for the job and deliver it with precision.
+<br />
+<h2 className="text-3xl md:text-1xl font-extrabold leading-tight">
+Three concrete examples:
+</h2>
+<br />
+A team is asked to expose a new column through the analytics API. Instead of just building it, the team pauses to clarify the real need: who will use it, in what workflow, and why it matters. They discover the actual job is to generate a weekly dashboard, not to support real time exploration. With that insight, they deliver a small derived table with a daily refresh, avoiding the costly plan to stream raw data and rebuild the full model.
+<br />
+A feature request comes in for a new permission. Instead of just adding another custom flag, the team uses continuous discovery to look deeper. They notice the recurring problem is confusion between roles and resources. By shadowing users, they see the real need is three standard bundles that cover almost every case. The team delivers those bundles plus a simple policy template, not twenty one-off permissions. The result is easier adoption, compliance, less maintenance, and a system that actually fits how people work.
+<br />
+Data scientists ask for a real time stream of time series data. Discovery reveals two distinct needs. Some want rapid iteration on a small subset to tune features, while others only need near real time alerts on a few key metrics. Everything else works fine with daily updates. The team delivers a very lightweight stream for a few critical metrics with a five minute freshness target, plus a daily curated table for the rest. Experiments speed up, alerts work reliably, and the platform stays simple and cost effective.
+<br />
+<h2 className="text-3xl md:text-1xl font-extrabold leading-tight">
+Proof that this paradigm shift works.
+</h2>
+<br />
+We are already seeing this change happening with Data Mesh. In the early days of data lakes, teams dumped information with little or no ownership, usability, or accountability and left enormous value on the table. The shift to treating data as a product reframed the entire space. Clear ownership, a focus on usability, and accountability for outcomes brought order and unlocked business value. The same thinking now needs to extend beyond data into APIs, platforms, and internal services.
+<br />
+As Steve Blank, one of the originators of the lean startup movement, reminds us: “Your product is not their problem.” The point is simple. People care about their own needs and outcomes, not about your system, tech epics or features. The task is to deeply understand those needs and design accordingly. For internal systems that means sitting with the people who depend on your endpoint, your job scheduler, or your policy engine. Watch how they work. Learn where they guess. Learn what good looks like in their context. Then build the smallest thing that proves you understood.
+<br />
+<h2 className="text-3xl md:text-1xl font-extrabold leading-tight">
+Antipatterns to avoid.
+</h2>
+<br />
+<li>Bolt on discovery that ends after a workshop.</li>
+<li>Stakeholder echo where opinions replace user reality.</li>
+<li>Backlog inflation that treats ideas as requirements.</li>
+<li>Output worship that tracks velocity without outcomes.</li>
+<li>One person discovery done in isolation from engineering.</li> 
+<br />
+<h2 className="text-3xl md:text-1xl font-extrabold leading-tight">
+Measures that keep you honest.
+</h2>
+<br />
+<li>Adoption of the thing you shipped.</li> 
+<li>Time to first successful use.</li> 
+<li>Reduction in handovers or manual work.</li> 
+<li>Incidents avoided or time to recover improved.</li> 
+<li>Cost to serve the use case compared to last quarter.</li>
+<li>Amount of rework.</li>
+
+<br />
+Pick the one or two that matter for your system. Make it part of team ceremonies and put them where the team looks every day. Let them shape decisions.
+<br />
+<h2 className="text-3xl md:text-1xl font-extrabold leading-tight">
+Closing.
+</h2>
+<br />
+Internal systems are not just background tech. They are the engines that determine whether a company runs smoothly or stalls under its own weight. Continuous discovery is a habit that keeps those engines tuned by reducing uncertainty, focusing effort where it matters, and aligning technology with real user needs.
+<br />
+It needs a similar paradigm shift to the one that is already underway in data, where treating information as a product has turned data lakes into valuable assets. The same mindset can unlock enormous value across APIs, platforms, and internal services. It is not about doing more. It is about doing less but doing the right things with clarity and precision.
+<br />
+The companies that make this shift will spend less, adopt faster, and scale with confidence. Those that do not will keep adding features, roles, and costs without solving the problems that actually matter. In a world of shrinking budgets and rising expectations, the choice is often no longer optional.
+
+

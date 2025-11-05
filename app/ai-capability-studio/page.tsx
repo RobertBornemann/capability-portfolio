@@ -24,7 +24,7 @@ export default function StudioHub() {
       title: "AI Cost & Performance Optimizer",
       blurb:
         "A visual, interactive tool that shows AI cost optimization opportunities in real-time, with before/after comparisons and actionable recommendations.",
-      status: "Coming soon",
+      status: "Demo",
       actionable: true, // hide button
     },
   ];

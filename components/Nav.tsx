@@ -10,7 +10,7 @@ export default function Nav() {
             <li><Link className="hover:underline" href="/">Home</Link></li>
             <li><Link className="hover:underline" href="/experience">About Me</Link></li>
             <li><Link className="hover:underline" href="/ai-capability-studio">AI Capability Studio</Link></li>
-            <li><Link className="hover:underline" href="/#research">Research</Link></li>
+            <li><Link className="hover:underline" href="/blog">Blog</Link></li>
             <li><Link className="hover:underline" href="/contact">Contact</Link></li>
           </ul>
         </nav>

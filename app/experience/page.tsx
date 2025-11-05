@@ -12,16 +12,17 @@ export default function ExperiencePage() {
 For over ten years I have built and scaled digital products across industries, from AI and machine learning platforms to data infrastructure and enterprise systems. I specialize in aligning fragmented stakeholders, unsticking stalled products, and connecting strategy with execution.        </p>
 
         <p>
-My work spans product management and strategy, platform architecture, and organizational design. I have led initiatives for global enterprises and fast-moving startups, though I cannot disclose all clients publicly. My consulting work has taken me across continents, including four years in Brazil and one year in Silicon Valley, shaping how I approach leadership, culture, and innovation.        </p>
+My work spans product management and strategy, platform architecture, and organizational design. I have led initiatives for global enterprises and fast-moving startups, though I cannot disclose all clients publicly. My consulting journey has spanned continents, with years spent in South and North America that shaped my approach to leadership, culture, and innovation.</p>
         <p>
-I have helped design platforms serving thousands of users, driven AI adoption at scale, and published on product leadership and organizational psychology. I thrive in ambitious and complex environments where clear thinking matters more than perfect plans.        </p>
+        Experience across industries such as e-commerce, retail, fintech, automotive and mobility, aviation, energy, and manufacturing has shaped my work designing platforms for thousands of users, driving AI adoption at scale, and publishing on product leadership and organizational psychology. I thrive in ambitious and complex environments where clear thinking matters more than perfect plans.
+       </p>
       </div>
 
       {/* Anonymised clients / roles */}
       <section className="mt-10 space-y-6">
         <ExpItem
           title="Global chemicals manufacturer — ML Platform Product"
-          period="Germany · 500+ researchers"
+          period="Germany · Self-service"
           bullets={[
             "Evolution of an internal AI/ML platform aimed at democratizing research and development efforts.",
             "Reduced model deployment lead time with self-service workflows.",
@@ -39,12 +40,12 @@ I have helped design platforms serving thousands of users, driven AI adoption at
         />
 
         <ExpItem
-          title="Data Platforms — Data Mesh Enablement"
-          period="Germany · Core system modernization"
+          title="Various Data Platforms — Data Mesh Enablement"
+          period="Europe · Core system modernization"
           bullets={[
             "Discovery and business alignment for large-scale modernization of data systems.",
             "Designed secure, scalable data architecture patterns based on Data Mesh principles.",
-            "Facilitated collaboration between domain teams to align ownership, data contracts, and platform capabilities across organizations.",
+            "Facilitated collaboration to align ownership, capabilities and governance across organizations.",
           ]}
         />
       </section>
