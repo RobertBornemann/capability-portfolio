@@ -94,11 +94,15 @@ export default function DiscoveryDemo() {
       {/* header */}
       <div className="flex items-start justify-between gap-4">
         <div>
-          <h1 className="text-3xl font-bold">Discovery AI — Locked Demo</h1>
+          <h1 className="text-3xl font-bold">Discovery AI — Read-only Demo</h1>
           <p className="mt-2 max-w-2xl text-sm text-neutral-600">
-            Choose a transcript, preview it, then run the real analysis. Inputs are fixed on the server to protect
-            privacy and control costs.
-          </p>
+          Continuous discovery is now a common best practice in modern product teams. Many teams conduct interviews to uncover insights, pain points, and opportunities that shape their product direction. Generative AI makes it possible to identify these patterns in qualitative data within minutes instead of weeks, yet many organizations still lack direct access, clear data guidelines, or the expertise to prompt and scale such tools safely and consistently.
+          <br />
+          <br />
+          Discovery AI closes this gap. It analyzes interview data using proven research frameworks while ensuring structure, compliance, and security. Built for real product teams, it applies predefined research configurations to surface pain points, jobs to be done, workarounds, desired outcomes, and mental models. The outputs are ready for use, with all sensitive data removed, allowing teams to focus entirely on discovery rather than operations and governance.
+          <br />
+          <br />
+          To run the demo, select a transcript below and start the analysis. You can learn more about the tech in the <b>About</b> section below.          </p>
         </div>
         <button
           onClick={runDemo}
