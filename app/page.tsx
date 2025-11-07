@@ -8,21 +8,21 @@ export default function Home() {
     {
       title: "Continuous Discovery AI",
       blurb:
-        "AI-powered interview analysis for product discovery. Locked inputs, validated outputs, and cost controls.",
+        "AI workflow tool that automates the analysis of user interviews with built-in defaults, guardrails, research guidelines, and input sanitization.",
       href: "/ai-capability-studio/discovery", // live page
       code: "https://github.com/RobertBornemann/continuous_discovery_ai",
     },
     {
       title: "AI Cost & Performance Optimizer",
       blurb:
-        "Guardrails for latency, cost, and output quality. In Progress!",
+        "AI Costs and performance trade-offs: in-progress tool exploring how different use cases and company types map to simulated spend.",
       href: "/ai-capability-studio/cost-optimizer",
       code: "https://github.com/RobertBornemann/AI-Cost-Performance-Optimiser",
     },
     {
-      title: "PromptOps",
+      title: "Insights Pipeline for Asset Reports",
       blurb:
-        "Service + SDK to manage prompts as versioned artifacts. Coming soon.",
+        "Measuring market confidence across portfolios through the transformation from raw reports to governed AI insight.",
       href: null,
       code: null,
     },
