@@ -12,6 +12,14 @@ type DemoCard = {
 export default function StudioHub() {
   const demos: DemoCard[] = [
     {
+      slug: "spectorr",
+      title: "Insights Pipeline for Asset Reports",
+      blurb:
+      "Measuring market confidence across portfolios through the transformation from raw reports to governed AI insight.",
+      status: "Demo",
+      actionable: true, // hide button
+    },
+    {
       slug: "discovery",
       title: "Continuous Discovery AI",
       blurb:
@@ -27,14 +35,7 @@ export default function StudioHub() {
       status: "Demo",
       actionable: true, // hide button
     },
-    {
-      slug: "data-pipeline",
-      title: "Insights Pipeline for Asset Reports",
-      blurb:
-      "Measuring market confidence across portfolios through the transformation from raw reports to governed AI insight.",
-      status: "Coming soon",
-      actionable: false, // hide button
-    },
+
   ];
 
   return (
