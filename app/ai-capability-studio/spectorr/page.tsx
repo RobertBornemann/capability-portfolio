@@ -1,6 +1,7 @@
 // app/insights-demo/page.tsx (Improved Version)
 'use client';
 import { useEffect, useRef, useState } from 'react';
+import Image from 'next/image';
 import { TrendingUp, TrendingDown, Zap, Database, Brain, CheckCircle2, Loader2 } from 'lucide-react';
 
 type PipelineStage = 'idle' | 'initializing' | 'ingesting' | 'analyzing' | 'complete';
@@ -287,23 +288,28 @@ export default function InsightsDemo() {
         <div className="space-y-8">
           {/* Hero Image */}
           <div className="relative w-full rounded-xl overflow-hidden shadow-2xl bg-gradient-to-br from-blue-50 to-neutral-50">
-            <img 
+            <Image 
               src="/hero-sentiment-analysis.png" 
               alt="AI Sentiment Analysis Visualization"
+              width={1200}
+              height={400}
               className="w-full h-auto object-cover"
               style={{ maxHeight: '400px' }}
               onError={(e) => {
                 // Fallback if image doesn't exist yet
-                e.currentTarget.style.display = 'none';
-                e.currentTarget.parentElement!.innerHTML = `
-                  <div class="flex items-center justify-center h-64 bg-gradient-to-br from-blue-100 via-purple-50 to-neutral-100">
-                    <div class="text-center space-y-3 p-8">
-                      <div class="text-6xl">🤖✨</div>
-                      <p class="text-lg text-neutral-600 font-medium">AI-Powered Sentiment Analysis</p>
-                      <p class="text-sm text-neutral-500">Add your hero image at /public/hero-sentiment-analysis.png</p>
+                const target = e.target as HTMLImageElement;
+                target.style.display = 'none';
+                if (target.parentElement) {
+                  target.parentElement.innerHTML = `
+                    <div class="flex items-center justify-center h-64 bg-gradient-to-br from-blue-100 via-purple-50 to-neutral-100">
+                      <div class="text-center space-y-3 p-8">
+                        <div class="text-6xl">🤖✨</div>
+                        <p class="text-lg text-neutral-600 font-medium">AI-Powered Sentiment Analysis</p>
+                        <p class="text-sm text-neutral-500">Add your hero image at /public/hero-sentiment-analysis.png</p>
+                      </div>
                     </div>
-                  </div>
-                `;
+                  `;
+                }
               }}
             />
           </div>
@@ -379,7 +385,7 @@ export default function InsightsDemo() {
                 </li>
                 <li className="flex gap-2">
                   <span className="text-green-600">▸</span>
-                  <span><strong>Caching & history:</strong> snapshot insights by day for trend lines and "what changed" diffs</span>
+                  <span><strong>Caching & history:</strong> snapshot insights by day for trend lines and &ldquo;what changed&rdquo; diffs</span>
                 </li>
                 <li className="flex gap-2">
                   <span className="text-green-600">▸</span>
