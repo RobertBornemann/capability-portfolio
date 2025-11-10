@@ -52,7 +52,7 @@ export default function StudioHub() {
       <div className="space-y-3 mb-10">
         <h1 className="text-5xl font-bold tracking-tight">AI Capability Studio</h1>
         <p className="text-lg text-neutral-600 max-w-3xl">
-          Interactive demos showcasing production-grade AI applications I've built, 
+          Interactive demos showcasing production-grade AI applications I&apos;ve built, 
           from concept to implementation. Each demo highlights both technical execution 
           and product thinking.
         </p>
@@ -160,7 +160,7 @@ export default function StudioHub() {
         <p className="text-sm text-neutral-600 leading-relaxed">
           Each project is aiming to demonstrate end-to-end thinking: from identifying user needs 
           and defining success metrics, to technical architecture and polished UX. 
-          These aren't just code samples, they're products designed with real-world 
+          These aren&apos;t just code samples, they&apos;re products designed with real-world 
           constraints in mind, including cost optimization, security, and scalability.
         </p>
       </div>
