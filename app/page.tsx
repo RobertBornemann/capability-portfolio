@@ -6,7 +6,7 @@ export default function Home() {
 
   const cards = [
     {
-      title: "Insights Pipeline for Asset Reports",
+      title: "Inspectorr AI",
       blurb:
         "Measuring market confidence across portfolios through the transformation from raw reports to governed AI insight.",
       href: "/ai-capability-studio/spectorr",
@@ -17,7 +17,7 @@ export default function Home() {
       title: "Continuous Discovery AI",
       blurb:
         "AI workflow tool that automates the analysis of user interviews with built-in defaults, guardrails, research guidelines, and input sanitization.",
-      href: "/ai-capability-studio/discovery", // live page
+      href: "/ai-capability-studio/discovery",
       code: "https://github.com/RobertBornemann/continuous_discovery_ai",
       thumbnail: "/discovery-hero.png",
     },
@@ -47,36 +47,93 @@ export default function Home() {
               </h1>
 
               <p className="mt-5 max-w-xl text-neutral-600">
-                  I help teams design and deliver data, AI, and platform products at scale that balance customer value, cost, and reliability.
-                  Explore my working demos, case studies, and articles across this page.
+              I work across product strategy and delivery, building deep expertise in data, platform, and AI products.
+              Explore my demos, case studies, and articles. Currently at Thoughtworks.
               </p>
 
               <div className="mt-8 flex items-center gap-4">
-                <a href="#work" className="inline-flex items-center gap-2 rounded-full border border-neutral-300 px-4 py-2 text-sm font-medium hover:bg-white">
-                  Links →
+                <a href="#work" className="inline-flex items-center gap-2 rounded-full bg-blue-600 text-white px-6 py-3 text-sm font-semibold hover:bg-blue-700 transition-colors">
+                  View Work →
                 </a>
                 <div className="hidden md:flex items-center gap-5 text-sm text-neutral-600">
-                  <a href="https://github.com/RobertBornemann" target="_blank" className="hover:underline">GitHub</a>
-                  <a href="https://www.linkedin.com/in/robert-bornemann-781713253/" target="_blank" className="hover:underline">LinkedIn</a>
+                  <a href="https://github.com/RobertBornemann" target="_blank" className="hover:text-black transition-colors">GitHub</a>
+                  <a href="https://www.linkedin.com/in/robert-bornemann-781713253/" target="_blank" className="hover:text-black transition-colors">LinkedIn</a>
                 </div>
               </div>
             </div>
 
-            {/* Right column: photo without frame */}
+            {/* Right column: Featured blog posts */}
             <div className="relative">
-              {/* Big faint circle glow */}
-              <div className="absolute -inset-6 rounded-full bg-gradient-to-b from-neutral-100 to-transparent blur-2xl" />
+              {/* Background glow */}
+              <div className="absolute -inset-6 rounded-full bg-gradient-to-b from-blue-100 to-transparent blur-3xl opacity-60" />
+              
+              {/* Featured blog posts grid */}
+              <div className="relative z-10 grid grid-cols-2 gap-4">
+                {/* Blog post 1 */}
+                <Link 
+                  href="/blog/discovery"
+                  className="relative aspect-square rounded-2xl border-2 border-neutral-200 bg-white shadow-lg overflow-hidden group hover:border-blue-400 transition-all duration-300"
+                >
+                  <Image
+                    src="/hidden.png"
+                    alt="The Hidden Edge"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+                  <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
+                    <p className="text-xs font-semibold">Latest Post</p>
+                    <p className="text-sm font-bold mt-1 line-clamp-2">The Hidden Edge</p>
+                  </div>
+                </Link>
 
-              {/* Photo - clean, no frame decoration */}
-              <div className="relative z-10 mx-auto aspect-square w-[82%] md:w-[75%] rounded-2xl border border-neutral-200 bg-white shadow-lg overflow-hidden">
-                <Image
-                  src="/hero-thumb.jpg"
-                  alt="Robert Bornemann"
-                  fill
-                  className="object-cover"
-                  sizes="(min-width: 768px) 480px, 80vw"
-                  priority
-                />
+                {/* Blog post 2 */}
+                <Link 
+                  href="/blog/courage"
+                  className="relative aspect-square rounded-2xl border-2 border-neutral-200 bg-white shadow-lg overflow-hidden group hover:border-blue-400 transition-all duration-300"
+                >
+                  <Image
+                    src="/courage.png"
+                    alt="The Courage to Be Yourself"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+                  <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
+                    <p className="text-xs font-semibold">Essay</p>
+                    <p className="text-sm font-bold mt-1 line-clamp-2">The Courage to Be Yourself</p>
+                  </div>
+                </Link>
+                
+                {/* Blog post 3 */}
+                <Link 
+                  href="/blog/adoption"
+                  className="relative aspect-square rounded-2xl border-2 border-neutral-200 bg-white shadow-lg overflow-hidden group hover:border-blue-400 transition-all duration-300"
+                >
+                  <Image
+                    src="/discovery.png"
+                    alt="Designing for Adoption"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+                  <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
+                    <p className="text-xs font-semibold">Framework</p>
+                    <p className="text-sm font-bold mt-1 line-clamp-2">Designing for Adoption</p>
+                  </div>
+                </Link>
+
+                {/* View all blog link */}
+                <Link 
+                  href="/blog"
+                  className="relative aspect-square rounded-2xl border-2 border-neutral-200 bg-gradient-to-br from-blue-50 to-neutral-100 shadow-lg flex items-center justify-center group hover:border-blue-400 hover:shadow-xl transition-all duration-300"
+                >
+                  <div className="text-center p-4">
+                    <div className="text-4xl mb-2 group-hover:scale-110 transition-transform"></div>
+                    <p className="text-sm font-bold text-neutral-700 group-hover:text-blue-600 transition-colors">View All Posts</p>
+                    <p className="text-xs text-neutral-500 mt-1">Essays & case studies</p>
+                  </div>
+                </Link>
               </div>
             </div>
           </div>
@@ -86,7 +143,7 @@ export default function Home() {
       {/* WORK ANCHOR */}
       <section id="work" className="mx-auto max-w-6xl px-5 md:px-6 py-16">
         <h2 className="text-2xl md:text-3xl font-semibold">Featured work</h2>
-        <p className="mt-2 text-neutral-600">Interactive demos and case studies coming up.</p>
+        <p className="mt-2 text-neutral-600">Interactive demos and case studies.</p>
 
         <div className="mt-8 grid gap-6 md:grid-cols-3">
           {cards.map((c) => (
@@ -130,7 +187,7 @@ export default function Home() {
                   {c.href ? (
                     <Link
                       href={c.href}
-                      className="flex-1 text-center rounded-xl bg-black text-white px-4 py-2 font-medium hover:bg-neutral-800 transition-colors"
+                      className="flex-1 text-center rounded-xl bg-blue-600 text-white px-4 py-2 font-medium hover:bg-blue-700 transition-colors"
                     >
                       Open
                     </Link>
@@ -145,7 +202,7 @@ export default function Home() {
                       href={c.code}
                       target="_blank"
                       rel="noreferrer"
-                      className="rounded-xl border-2 border-neutral-200 px-4 py-2 hover:border-neutral-900 transition-colors font-medium flex items-center justify-center"
+                      className="rounded-xl border-2 border-neutral-200 px-4 py-2 hover:border-blue-600 hover:text-blue-600 transition-colors font-medium flex items-center justify-center"
                       title="View source code on GitHub"
                     >
                       <svg 
