@@ -2,6 +2,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
+import "leaflet/dist/leaflet.css";
 
 export const metadata: Metadata = {
   title: 'Robert Bornemann — AI Productization Portfolio',

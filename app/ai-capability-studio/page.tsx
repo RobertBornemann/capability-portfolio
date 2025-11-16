@@ -15,6 +15,16 @@ type DemoCard = {
 export default function StudioHub() {
   const demos: DemoCard[] = [
     {
+      slug: "parkcast_lab",
+      title: "Parkcast Lab",
+      blurb:
+        "End-to-end ML concept turning granular neighborhood data into probabilistic parking forecasts, shown as color-coded street segments over a static city map.",
+      status: "Demo",
+      actionable: true,
+      thumbnail: "/parkcast.png",
+      tags: ["ML", "Time-Series Data", "Urban Mobility"],
+    },
+    {
       slug: "spectorr",
       title: "Inspectorr AI",
       blurb:
@@ -43,7 +53,7 @@ export default function StudioHub() {
       actionable: true,
       thumbnail: "/optimizer-hero.png",
       tags: ["Governance", "Data Viz", "Cost Analysis"],
-    },
+    }
   ];
 
   return (
