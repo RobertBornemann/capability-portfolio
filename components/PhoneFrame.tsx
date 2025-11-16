@@ -2,7 +2,12 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import ParkingMap from "./ParkingMap";
+import dynamic from "next/dynamic";
+
+// Leaflet-based map must only render in the browser
+const ParkingMap = dynamic(() => import("./ParkingMap"), {
+  ssr: false,
+});
 
 export default function PhoneFrame() {
   const [hour, setHour] = useState(20);
