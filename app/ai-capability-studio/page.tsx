@@ -1,6 +1,13 @@
 // app/ai-capability-studio/page.tsx
 import Link from "next/link";
 import Image from "next/image";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'AI Capability Studio – Robert Bornemann',
+  description:
+    'Interactive demos showcasing production-grade AI applications I have built, from concept to implementation. Each demo highlights both technical execution and product thinking.',
+};
 
 type DemoCard = {
   slug: string;

@@ -1,6 +1,9 @@
 import Image from 'next/image';
 
-export const metadata = { title: "About Me — Robert Bornemann" };
+export const metadata = { 
+  title: "About Robert Bornemann | Product Leader & Consultant",
+  description: "Product leader specializing in AI/ML platforms, data infrastructure, and organizational transformation. 10+ years building and scaling digital products for global enterprises across automotive, fintech, energy, and manufacturing."
+};
 
 export default function AboutMePage() {
   return (

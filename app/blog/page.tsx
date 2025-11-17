@@ -1,10 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { getAllPostsMeta } from '@/lib/blog';
+import type { Metadata } from 'next';
 
-export const metadata = {
-  title: 'Blog — Robert Bornemann',
-  description: 'Essays, notes, and case studies about AI product management.',
+export const metadata: Metadata = {
+  title: 'Blog — Robert Bornemann | AI Product Leadership & Strategy',
+  description: 'In-depth essays and case studies on AI/ML product management, platform architecture, and organizational transformation. Practical insights from 10+ years building data and AI products at scale.',
 };
 
 export default function BlogIndex() {

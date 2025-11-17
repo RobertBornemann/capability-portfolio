@@ -1,8 +1,14 @@
 import dynamic from 'next/dynamic';
 import Image from 'next/image';
-const CostEstimator = dynamic(() => import('@/components/CostEstimator'), { ssr: false });
+import type { Metadata } from 'next';
 
-export const metadata = { title: 'AI Cost & Performance Optimizer' };
+export const metadata: Metadata = {
+  title: 'AI Cost & Performance Optimizer — Model Costs, Token Flows, Trade-offs',
+  description:
+    'An in-progress, visual cost simulator for AI APIs. Model costs, token flows, and performance trade-offs across real-world use cases. Explore presets, estimate spend, and compare models with cached vs. uncached runs.',
+};
+
+const CostEstimator = dynamic(() => import('@/components/CostEstimator'), { ssr: false });
 
 export default function Page() {
   return (
